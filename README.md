@@ -1,79 +1,72 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Starter Template with TypeScript
 
-# Getting Started
+This React Native starter template is designed to accelerate the development of mobile applications using React Native and TypeScript. It includes a pre-configured environment with essential libraries and a structured project layout, making it ideal for quickly starting new projects.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **TypeScript Integration**: Leverages TypeScript for type-safe coding and maintainability.
+- **Navigation**: Set up with React Navigation for intuitive and easy-to-manage screen navigation.
+- **State Management**: Configured with Redux for efficient and predictable state management.
+- **Form Handling**: Utilizes React Hook Form with Zod for form validation, featuring a pre-built login page as an example.
+- **Type Declaration from Zod Schemas**: Types are inferred from Zod schemas for consistent and reliable type checking.
+- **Icon Library**: Includes React Native Vector Icons for a wide range of customizable icons.
+- **Essential Libraries**: Comes with @react-native-async-storage/async-storage for local storage, Axios for HTTP requests, Fuse.js for advanced searching, and more.
+- **Scalable Folder Structure**: Organized into a `src` folder containing sub-folders like `assets`, `components`, `data`, `navigation`, `pages`, `store`, and `types` for better project management.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Prerequisites
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Before starting, ensure you have:
 
-```bash
-# using npm
-npm start
+- Node.js (version 18 or higher)
+- npm or yarn package manager
+- React Native environment set up (refer to [React Native Environment Setup](https://reactnative.dev/docs/environment-setup))
 
-# OR using Yarn
-yarn start
-```
+## Getting Started
 
-## Step 2: Start your Application
+1. Clone the repository:
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+    ```
+    git clone https://github.com/Humza1011/react-native-starter.git
+    cd react-native-starter
+    ```
 
-### For Android
+2. Install dependencies:
 
-```bash
-# using npm
-npm run android
+    ```
+    npm install
+    # or
+    yarn install
+    ```
 
-# OR using Yarn
-yarn android
-```
+3. Run the application:
 
-### For iOS
+    ```
+    npx react-native run-android
+    # or
+    npx react-native run-ios
+    ```
 
-```bash
-# using npm
-npm run ios
+The application should now be running on your device or emulator.
 
-# OR using Yarn
-yarn ios
-```
+## Project Structure
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+- `src/`: Main source folder.
+  - `assets/`: Static assets like images and fonts.
+  - `components/`: Reusable components.
+  - `data/`: Sample data or data configurations.
+  - `navigation/`: Navigation configurations and stacks.
+  - `pages/`: Screen components.
+  - `store/`: Redux store configuration and slices.
+  - `types/`: TypeScript type definitions and interfaces.
+- `index.js`: Entry point of the application.
+- `App.tsx`: Main application component that sets up the provider, navigation, and global app structure.
+- `README.md`: Documentation of the project.
+- `package.json`: Project metadata and dependencies.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Usage
 
-## Step 3: Modifying your App
+This starter template serves as a foundation for building React Native applications with TypeScript. Customize and extend it according to your project's requirements. Refer to individual library documentation for detailed usage and customization options.
 
-Now that you have successfully run the app, let's modify it.
+## Acknowledgments
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- This starter template was created to simplify and expedite the development of React Native applications using TypeScript and popular libraries.
